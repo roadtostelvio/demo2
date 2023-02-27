@@ -1,4 +1,4 @@
-name: ui-test-poc
+name: Testing browser-actions/setup-edge on Windows runner
 
 on:
   workflow_dispatch:
