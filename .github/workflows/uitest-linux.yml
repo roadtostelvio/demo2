@@ -1,0 +1,24 @@
+name: Testing browser-actions/setup-edge on Linux runner
+
+on:
+  workflow_dispatch:
+    
+env:
+  #edit your values here
+  ENVIRONMENT_URL: 'https://bis-d365-dev.crm17.dynamics.com/'
+  CLIENT_ID: 'be73aa7b-0105-4f77-8446-7b1e69c9d45d'
+  TENANT_ID: '03e82858-fc14-4f12-b078-aac6d25c87da'
+  
+jobs:
+  test:
+    name: test-ui
+    runs-on: [ubuntu-latest]
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: setup-edge
+      uses: browser-actions/setup-edge@v1
+      
+    - uses: actions/setup-node@v2
+      with:
+        node-version: '16.x'
