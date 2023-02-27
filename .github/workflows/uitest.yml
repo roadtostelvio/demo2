@@ -1,0 +1,44 @@
+name: ui-test-poc
+
+on:
+  workflow_dispatch:
+    
+env:
+  #edit your values here
+  ENVIRONMENT_URL: 'https://bis-d365-dev.crm17.dynamics.com/'
+  CLIENT_ID: 'be73aa7b-0105-4f77-8446-7b1e69c9d45d'
+  TENANT_ID: '03e82858-fc14-4f12-b078-aac6d25c87da'
+  
+jobs:
+  runner:
+    uses: bis-its-devops/runner-creator-workflow/.github/workflows/create-runner.yaml@v1
+    with:
+      image: quay.bisinfo.org/devops/nodejs-16-runner
+      jobName: ui-test
+   
+   
+  ui-test:
+    name: ui-test
+    needs: runner
+    runs-on: ${{ needs.runner.outputs.runnername }}
+        # or you can say runs-on: ubuntu-latest
+    env:
+      RUNNER_DEBUG: 1
+
+    steps:
+    # Action used to checkout the main branch in the current repository
+    #   Community action: https://github.com/actions/checkout
+    - name: Checkout
+      uses: actions/checkout@v3.3.0
+      
+    - name: Setup Edge
+      uses: browser-actions/setup-edge@v1
+
+  
+  
+  cleanup:
+    if: ${{ cancelled() || failure() }}
+    needs: [ ui-test,  runner]
+    uses: bis-its-devops/runner-creator-workflow/.github/workflows/cleanup-runner.yaml@v1
+    with:
+      runnerName: ${{ needs.runner.outputs.runnername }}
