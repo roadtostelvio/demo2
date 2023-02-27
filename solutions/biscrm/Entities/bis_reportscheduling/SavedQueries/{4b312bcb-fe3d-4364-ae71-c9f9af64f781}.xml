@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{4b312bcb-fe3d-4364-ae71-c9f9af64f781}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="bis_name" select="1" icon="1" preview="1">
+        <row name="result" id="bis_reportschedulingid">
+          <cell name="bis_name" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="bis_startdate" width="100" />
+          <cell name="bis_enddate" width="100" />
+          <cell name="bis_reportcategory" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="bis_report" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="statuscode" width="100" />
+          <cell name="bis_contact" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="createdby" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="bis_reportscheduling">
+          <attribute name="bis_name" />
+          <attribute name="createdon" />
+          <order attribute="bis_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="1" />
+          </filter>
+          <attribute name="statuscode" />
+          <attribute name="bis_startdate" />
+          <attribute name="bis_reportcategory" />
+          <attribute name="bis_report" />
+          <attribute name="bis_enddate" />
+          <attribute name="bis_contact" />
+          <attribute name="createdby" />
+          <attribute name="bis_reportschedulingid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Inactive Report Schedulings" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

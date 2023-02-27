@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="20" failures="0" errors="0" time="8.234">
+  <testsuite name="AccountForm.onload" errors="0" failures="0" skipped="0" timestamp="2023-01-27T13:17:23" time="5.773" tests="1">
+    <testcase classname="AccountForm.onload Do nothing" name="AccountForm.onload Do nothing" time="0.008">
+    </testcase>
+  </testsuite>
+  <testsuite name="ConfigurationReader Get String Tests" errors="0" failures="0" skipped="0" timestamp="2023-01-27T13:17:23" time="6.222" tests="19">
+    <testcase classname="ConfigurationReader Get String Tests should retrieve the config value" name="ConfigurationReader Get String Tests should retrieve the config value" time="0.009">
+    </testcase>
+    <testcase classname="ConfigurationReader Get String Tests should return default value if not persisted" name="ConfigurationReader Get String Tests should return default value if not persisted" time="0.002">
+    </testcase>
+    <testcase classname="ConfigurationReader Get Bool Tests should retrieve the config value" name="ConfigurationReader Get Bool Tests should retrieve the config value" time="0.003">
+    </testcase>
+    <testcase classname="ConfigurationReader Get Bool Tests should return default value if not persisted" name="ConfigurationReader Get Bool Tests should return default value if not persisted" time="0.002">
+    </testcase>
+    <testcase classname="ConfigurationReader Get Bool Tests should return default value if not castable" name="ConfigurationReader Get Bool Tests should return default value if not castable" time="0.002">
+    </testcase>
+    <testcase classname="ConfigurationReader Get Number Tests should retrieve the config value" name="ConfigurationReader Get Number Tests should retrieve the config value" time="0.002">
+    </testcase>
+    <testcase classname="ConfigurationReader Get Number Tests should return default value if not persisted" name="ConfigurationReader Get Number Tests should return default value if not persisted" time="0.001">
+    </testcase>
+    <testcase classname="ConfigurationReader Get Number Tests should return default value if not castable" name="ConfigurationReader Get Number Tests should return default value if not castable" time="0.002">
+    </testcase>
+    <testcase classname="ConfigurationReader Get Semicolon List Tests should retrieve the config value" name="ConfigurationReader Get Semicolon List Tests should retrieve the config value" time="0.002">
+    </testcase>
+    <testcase classname="ConfigurationReader Get Semicolon List Tests should return default value if not persisted" name="ConfigurationReader Get Semicolon List Tests should return default value if not persisted" time="0.001">
+    </testcase>
+    <testcase classname="ConfigurationReader Get Semicolon List Tests should return default value if not castable" name="ConfigurationReader Get Semicolon List Tests should return default value if not castable" time="0.001">
+    </testcase>
+    <testcase classname="ConfigurationReader Get Comma List Tests should retrieve the config value" name="ConfigurationReader Get Comma List Tests should retrieve the config value" time="0.001">
+    </testcase>
+    <testcase classname="ConfigurationReader Get Comma List Tests should return default value if not persisted" name="ConfigurationReader Get Comma List Tests should return default value if not persisted" time="0.002">
+    </testcase>
+    <testcase classname="ConfigurationReader Get Comma List Tests should return default value if not castable" name="ConfigurationReader Get Comma List Tests should return default value if not castable" time="0.001">
+    </testcase>
+    <testcase classname="ConfigurationReader Get JSON Object Tests should retrieve the config value" name="ConfigurationReader Get JSON Object Tests should retrieve the config value" time="0.003">
+    </testcase>
+    <testcase classname="ConfigurationReader Get JSON Object Tests should return default value if not persisted" name="ConfigurationReader Get JSON Object Tests should return default value if not persisted" time="0.001">
+    </testcase>
+    <testcase classname="ConfigurationReader Get XML Object Tests should retrieve the config value" name="ConfigurationReader Get XML Object Tests should retrieve the config value" time="0.008">
+    </testcase>
+    <testcase classname="ConfigurationReader Get XML Object Tests should return default value if not persisted" name="ConfigurationReader Get XML Object Tests should return default value if not persisted" time="0.001">
+    </testcase>
+    <testcase classname="ConfigurationReader Get XML Object Tests should return default value if not castable" name="ConfigurationReader Get XML Object Tests should return default value if not castable" time="0.002">
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppModule>
+  <UniqueName>bis_biscrm</UniqueName>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <WebResourceId>953b9fac-1e5e-e611-80d6-00155ded156f</WebResourceId>
+  <OptimizedFor></OptimizedFor>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <FormFactor>1</FormFactor>
+  <ClientType>4</ClientType>
+  <NavigationType>0</NavigationType>
+  <AppModuleComponents>
+    <AppModuleComponent type="1" schemaName="account" />
+    <AppModuleComponent type="1" schemaName="annotation" />
+    <AppModuleComponent type="1" schemaName="appointment" />
+    <AppModuleComponent type="1" schemaName="bis_address" />
+    <AppModuleComponent type="1" schemaName="bis_addressbook" />
+    <AppModuleComponent type="1" schemaName="bis_agreement" />
+    <AppModuleComponent type="1" schemaName="bis_area" />
+    <AppModuleComponent type="1" schemaName="bis_boardmemberhistory" />
+    <AppModuleComponent type="1" schemaName="bis_city" />
+    <AppModuleComponent type="1" schemaName="bis_code" />
+    <AppModuleComponent type="1" schemaName="bis_connection" />
+    <AppModuleComponent type="1" schemaName="bis_connectionrole" />
+    <AppModuleComponent type="1" schemaName="bis_contingencyarrangement" />
+    <AppModuleComponent type="1" schemaName="bis_country" />
+    <AppModuleComponent type="1" schemaName="bis_institutiongroup" />
+    <AppModuleComponent type="1" schemaName="bis_institutiontype" />
+    <AppModuleComponent type="1" schemaName="bis_report" />
+    <AppModuleComponent type="1" schemaName="bis_reportcategory" />
+    <AppModuleComponent type="1" schemaName="bis_reportscheduling" />
+    <AppModuleComponent type="1" schemaName="bis_shareholderhistory" />
+    <AppModuleComponent type="1" schemaName="bis_state" />
+    <AppModuleComponent type="1" schemaName="bis_systemsettings" />
+    <AppModuleComponent type="1" schemaName="bis_zipcode" />
+    <AppModuleComponent type="1" schemaName="contact" />
+    <AppModuleComponent type="1" schemaName="email" />
+    <AppModuleComponent type="1" schemaName="opportunity" />
+    <AppModuleComponent type="1" schemaName="phonecall" />
+    <AppModuleComponent type="1" schemaName="task" />
+    <AppModuleComponent type="26" id="{00000000-0000-0000-00aa-000000666000}" />
+    <AppModuleComponent type="26" id="{00000000-0000-0000-00aa-000010001200}" />
+    <AppModuleComponent type="26" id="{59e57080-0cc2-e211-9b83-00155d89b902}" />
+    <AppModuleComponent type="26" id="{38a21ffb-4e32-4038-beb9-03172a0dd034}" />
+    <AppModuleComponent type="26" id="{a9af0ab8-861d-4cfa-92a5-c6281fed7fab}" />
+    <AppModuleComponent type="26" id="{199a7fea-93b3-47c8-b950-4b6d60b2c955}" />
+    <AppModuleComponent type="26" id="{00000000-0000-0000-00aa-000010001002}" />
+    <AppModuleComponent type="26" id="{65ffaf9a-e8c5-432d-860b-32f841b00d87}" />
+    <AppModuleComponent type="26" id="{00000000-0000-0000-00aa-000010001031}" />
+    <AppModuleComponent type="26" id="{00000000-0000-0000-00aa-000010001001}" />
+    <AppModuleComponent type="26" id="{40ffa587-72a1-ed11-aad0-000d3a83194e}" />
+    <AppModuleComponent type="26" id="{c9c49229-b2a3-ed11-aad0-000d3a830dec}" />
+    <AppModuleComponent type="26" id="{9045ec36-b2a3-ed11-aad0-000d3a830dec}" />
+    <AppModuleComponent type="26" id="{00000000-0000-0000-00aa-000000666800}" />
+    <AppModuleComponent type="26" id="{00000000-0000-0000-00aa-000010001203}" />
+    <AppModuleComponent type="26" id="{9eb361b4-67ac-4830-8abf-2d29efbaee2c}" />
+    <AppModuleComponent type="60" id="{dc98a189-389c-ed11-aad1-000d3adf77ac}" />
+    <AppModuleComponent type="60" id="{29de27bc-a257-4f29-99cf-bab4a84e688f}" />
+    <AppModuleComponent type="60" id="{3f6d94ac-68ad-40f4-b00f-735551539827}" />
+    <AppModuleComponent type="60" id="{707fc57b-c5e6-471b-a180-e37ed28a38e2}" />
+    <AppModuleComponent type="60" id="{661157fe-2fc9-4eaa-835f-5bfa2f7b64f7}" />
+    <AppModuleComponent type="60" id="{bdb0ae1c-32fa-4374-b637-8dafe107bc44}" />
+    <AppModuleComponent type="60" id="{d880c3cf-80e2-42f3-82f9-24d040d09f17}" />
+    <AppModuleComponent type="60" id="{449faa0e-f471-48ec-87d0-4719909546d2}" />
+    <AppModuleComponent type="60" id="{f3b707fb-3b5f-45f9-9c6b-5e573bb5d19e}" />
+    <AppModuleComponent type="60" id="{7bb87dfd-ec3e-4ed9-8e3e-5725d3067295}" />
+    <AppModuleComponent type="60" id="{b028db32-3619-48a5-ac51-cf3f947b0ef3}" />
+    <AppModuleComponent type="60" id="{69cff312-cfb6-4289-9631-249ab85d2c62}" />
+    <AppModuleComponent type="60" id="{c9e7ec2d-efca-4e4c-b3e3-f63c4bba5e4b}" />
+    <AppModuleComponent type="60" id="{098ae145-1567-41ec-8398-86dbaac70c9b}" />
+    <AppModuleComponent type="60" id="{85ac9825-2e67-4d06-9356-cdfcdef18465}" />
+    <AppModuleComponent type="60" id="{8044b2ef-e75d-4b94-b138-21220b82c4ad}" />
+    <AppModuleComponent type="60" id="{2205c86d-ed88-4a2f-a447-3b86a8781f2e}" />
+    <AppModuleComponent type="60" id="{1c45e737-60e5-462b-99fc-36fcef83e64d}" />
+    <AppModuleComponent type="60" id="{36721e46-39f7-4c5e-81f0-eba48bb31ca7}" />
+    <AppModuleComponent type="62" schemaName="bis_biscrm" />
+  </AppModuleComponents>
+  <AppModuleRoleMaps>
+    <Role id="{236750cd-45ae-4939-ab12-b24b920ced93}" />
+    <Role id="{627090ff-40a3-4053-8790-584edc5be201}" />
+    <Role id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+  </AppModuleRoleMaps>
+  <LocalizedNames>
+    <LocalizedName description="BIS CRM" languagecode="1033" />
+  </LocalizedNames>
+</AppModule>

@@ -1,0 +1,58 @@
+name: build-and-unit-test
+
+# GitHub workflow that builds JavaScript webresource and publishes the build artifacts.
+
+on: [workflow_dispatch]
+
+env:
+    TypeScript_Working_Directory: ${{ vars.TypeScript_Working_Directory}}
+    
+jobs:
+    
+# Runner    
+    runner:
+        uses: bis-its-devops/runner-creator-workflow/.github/workflows/create-runner.yaml@v1
+        with: 
+            image: quay.bisinfo.org/devops/nodejs-16-runner
+            jobName: build
+
+# Build, Unit test and publish the build artifact 
+    build-and-unit-test:
+        name: Build and test JavaScript Webresource
+        runs-on: ${{ needs.runner.outputs.runnername}}
+        needs: runner
+        steps:
+        
+            - name: Checkout code
+              uses: actions/checkout@v3
+              
+            - name: Install dependencies
+              working-directory: ./Src/Bis.Common.CRM/Bis.Common.CRM.WebResources         
+              run: npm ci
+              
+            - name: Build project
+              working-directory: ./Src/Bis.Common.CRM/Bis.Common.CRM.WebResources             
+              run: |
+                npm run publish --if-present
+                pwd
+              
+            - name: Test project
+              working-directory: ./Src/Bis.Common.CRM/Bis.Common.CRM.WebResources  
+              run: npm test
+            
+            - name: Publish build artifacts
+              uses: actions/upload-artifact@v3
+              with:
+                name: Bis.Common.CRM.WebResources.js
+                path: ./Src/Bis.Common.CRM/Bis.Common.CRM.WebResources/dist
+                
+
+
+# Cleanup the runner
+    cleanup:
+        if: ${{ cancelled() || failure() }} 
+        needs: [build-and-unit-test, runner]
+        uses: bis-its-devops/runner-creator-workflow/.github/workflows/cleanup-runner.yaml@v1
+        with:
+            runnerName: ${{ needs.runner.outputs.runnername }}
+    

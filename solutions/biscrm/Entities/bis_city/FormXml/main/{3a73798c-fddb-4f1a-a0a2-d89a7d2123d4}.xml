@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{3a73798c-fddb-4f1a-a0a2-d89a7d2123d4}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{0646aee0-1845-4b1e-bd54-863d64c2552c}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{cff67df9-f75d-460c-9fb6-eed4df8ece8a}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{06d8cf39-3389-4ce6-891f-b7ab5f04c3b9}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="bis_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bis_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c1b1a695-c455-d613-5e25-1ba635627150}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="City Code" languagecode="1033" />
+                        </labels>
+                        <control id="bis_citycode" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bis_citycode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5893dcd3-89c4-996e-d288-d4bc27b322d5}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Country" languagecode="1033" />
+                        </labels>
+                        <control id="bis_country" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="bis_country" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6427e99d-942c-43bf-9dc6-dba3586a150d}" showlabel="true" locklevel="1">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" uniqueid="{8a74c529-23c0-2310-c3a7-202842749254}" disabled="false">
+                          <parameters>
+                            <AutoResolve>false</AutoResolve>
+                            <DisableMru>true</DisableMru>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="section_zipcode" showlabel="true" showbar="false" locklevel="0" id="{d8b26012-a6ca-1362-4a12-2c9913ce53be}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="ZIP Codes" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{d4a8279e-78cc-0a5a-94cc-d289e2c88e61}" showlabel="false" colspan="1" auto="false" rowspan="6">
+                        <labels>
+                          <label description="ZIP Codes" languagecode="1033" />
+                        </labels>
+                        <control id="ZI" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true">
+                          <parameters>
+                            <ViewId>{B24E407D-07ED-4119-B304-3A4730808A29}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>bis_bis_city_bis_zipcode</RelationshipName>
+                            <TargetEntityType>bis_zipcode</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{B24E407D-07ED-4119-B304-3A4730808A29}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>Grid</ChartGridMode>
+                            <VisualizationId />
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                            <RelationshipRoleOrdinal>1</RelationshipRoleOrdinal>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

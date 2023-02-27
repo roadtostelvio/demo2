@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PluginAssembly FullName="Bis.Common.CRM.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=52cedd3c6811393e" PluginAssemblyId="833ca883-9fc6-4298-8813-d02bea273eab" CustomizationLevel="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <IsolationMode>2</IsolationMode>
+  <SourceType>0</SourceType>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <FileName>/PluginAssemblies/BisCommonCRMPlugins-833CA883-9FC6-4298-8813-D02BEA273EAB/BisCommonCRMPlugins.dll</FileName>
+  <PluginTypes>
+    <PluginType AssemblyQualifiedName="Bis.Common.CRM.Plugins.post_bis_validation_create, Bis.Common.CRM.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=52cedd3c6811393e" PluginTypeId="94ecc962-0d02-41f9-8882-b044cdeca9e6" Name="Bis.Common.CRM.Plugins.post_bis_validation_create">
+      <FriendlyName>6e2fffa0-58be-4c70-91cb-d9e89c856bca</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="Bis.Common.CRM.Plugins.post_bis_validation_update, Bis.Common.CRM.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=52cedd3c6811393e" PluginTypeId="02c80270-4cf0-44e0-b132-f59b55dc7597" Name="Bis.Common.CRM.Plugins.post_bis_validation_update">
+      <FriendlyName>b4f64d67-4283-4702-848c-d11e46e75d0e</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="Bis.Common.CRM.Plugins.pre_bis_address_create, Bis.Common.CRM.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=52cedd3c6811393e" PluginTypeId="e9cc6ffd-e717-450f-8d3e-564121845091" Name="Bis.Common.CRM.Plugins.pre_bis_address_create">
+      <FriendlyName>e1ae8151-96cf-4d65-9bc4-4223ac4bebf1</FriendlyName>
+    </PluginType>
+  </PluginTypes>
+</PluginAssembly>

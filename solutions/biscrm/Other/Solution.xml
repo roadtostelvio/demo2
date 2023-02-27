@@ -1,0 +1,504 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ImportExportXml version="9.2.23014.162" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SolutionManifest>
+    <UniqueName>biscrm</UniqueName>
+    <LocalizedNames>
+      <LocalizedName description="BIS - CRM" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Customized CRM solution for BIS." languagecode="1033" />
+    </Descriptions>
+    <Version>1.1.0.2</Version>
+    <Managed>0</Managed>
+    <Publisher>
+      <UniqueName>bis</UniqueName>
+      <LocalizedNames>
+        <LocalizedName description="BIS" languagecode="1033" />
+      </LocalizedNames>
+      <Descriptions />
+      <EMailAddress xsi:nil="true"></EMailAddress>
+      <SupportingWebsiteUrl xsi:nil="true"></SupportingWebsiteUrl>
+      <CustomizationPrefix>bis</CustomizationPrefix>
+      <CustomizationOptionValuePrefix>91360</CustomizationOptionValuePrefix>
+      <Addresses>
+        <Address>
+          <AddressNumber>1</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+        <Address>
+          <AddressNumber>2</AddressNumber>
+          <AddressTypeCode>1</AddressTypeCode>
+          <City xsi:nil="true"></City>
+          <County xsi:nil="true"></County>
+          <Country xsi:nil="true"></Country>
+          <Fax xsi:nil="true"></Fax>
+          <FreightTermsCode xsi:nil="true"></FreightTermsCode>
+          <ImportSequenceNumber xsi:nil="true"></ImportSequenceNumber>
+          <Latitude xsi:nil="true"></Latitude>
+          <Line1 xsi:nil="true"></Line1>
+          <Line2 xsi:nil="true"></Line2>
+          <Line3 xsi:nil="true"></Line3>
+          <Longitude xsi:nil="true"></Longitude>
+          <Name xsi:nil="true"></Name>
+          <PostalCode xsi:nil="true"></PostalCode>
+          <PostOfficeBox xsi:nil="true"></PostOfficeBox>
+          <PrimaryContactName xsi:nil="true"></PrimaryContactName>
+          <ShippingMethodCode>1</ShippingMethodCode>
+          <StateOrProvince xsi:nil="true"></StateOrProvince>
+          <Telephone1 xsi:nil="true"></Telephone1>
+          <Telephone2 xsi:nil="true"></Telephone2>
+          <Telephone3 xsi:nil="true"></Telephone3>
+          <TimeZoneRuleVersionNumber xsi:nil="true"></TimeZoneRuleVersionNumber>
+          <UPSZone xsi:nil="true"></UPSZone>
+          <UTCOffset xsi:nil="true"></UTCOffset>
+          <UTCConversionTimeZoneCode xsi:nil="true"></UTCConversionTimeZoneCode>
+        </Address>
+      </Addresses>
+    </Publisher>
+    <RootComponents>
+      <RootComponent type="1" schemaName="account" behavior="1" />
+      <RootComponent type="1" schemaName="activitypointer" behavior="1" />
+      <RootComponent type="1" schemaName="appointment" behavior="1" />
+      <RootComponent type="1" schemaName="bis_activity" behavior="0" />
+      <RootComponent type="1" schemaName="bis_activitycategory" behavior="0" />
+      <RootComponent type="1" schemaName="bis_activitysubcategory" behavior="0" />
+      <RootComponent type="1" schemaName="bis_address" behavior="0" />
+      <RootComponent type="1" schemaName="bis_addressbook" behavior="0" />
+      <RootComponent type="1" schemaName="bis_agreement" behavior="0" />
+      <RootComponent type="1" schemaName="bis_agreementtype" behavior="0" />
+      <RootComponent type="1" schemaName="bis_area" behavior="0" />
+      <RootComponent type="1" schemaName="bis_bankingfunction" behavior="0" />
+      <RootComponent type="1" schemaName="bis_bissystemaccess" behavior="0" />
+      <RootComponent type="1" schemaName="bis_boardmemberhistory" behavior="0" />
+      <RootComponent type="1" schemaName="bis_city" behavior="0" />
+      <RootComponent type="1" schemaName="bis_code" behavior="0" />
+      <RootComponent type="1" schemaName="bis_connection" behavior="0" />
+      <RootComponent type="1" schemaName="bis_connectionrole" behavior="0" />
+      <RootComponent type="1" schemaName="bis_contingencyarrangement" behavior="0" />
+      <RootComponent type="1" schemaName="bis_country" behavior="0" />
+      <RootComponent type="1" schemaName="bis_customerdesk" behavior="0" />
+      <RootComponent type="1" schemaName="bis_customergroupdesk" behavior="0" />
+      <RootComponent type="1" schemaName="bis_document" behavior="0" />
+      <RootComponent type="1" schemaName="bis_domain" behavior="0" />
+      <RootComponent type="1" schemaName="bis_ebisroom" behavior="0" />
+      <RootComponent type="1" schemaName="bis_institutiongroup" behavior="0" />
+      <RootComponent type="1" schemaName="bis_institutiontype" behavior="0" />
+      <RootComponent type="1" schemaName="bis_nationality" behavior="0" />
+      <RootComponent type="1" schemaName="bis_product" behavior="0" />
+      <RootComponent type="1" schemaName="bis_ranking" behavior="0" />
+      <RootComponent type="1" schemaName="bis_report" behavior="0" />
+      <RootComponent type="1" schemaName="bis_reportcategory" behavior="0" />
+      <RootComponent type="1" schemaName="bis_reportscheduling" behavior="0" />
+      <RootComponent type="1" schemaName="bis_shareholderhistory" behavior="0" />
+      <RootComponent type="1" schemaName="bis_state" behavior="0" />
+      <RootComponent type="1" schemaName="bis_swiftcode" behavior="0" />
+      <RootComponent type="1" schemaName="bis_systemsettings" behavior="0" />
+      <RootComponent type="1" schemaName="bis_validation" behavior="0" />
+      <RootComponent type="1" schemaName="bis_zipcode" behavior="0" />
+      <RootComponent type="1" schemaName="contact" behavior="1" />
+      <RootComponent type="1" schemaName="email" behavior="1" />
+      <RootComponent type="1" schemaName="leadtoopportunitysalesprocess" behavior="0" />
+      <RootComponent type="1" schemaName="opportunity" behavior="1" />
+      <RootComponent type="1" schemaName="opportunitysalesprocess" behavior="0" />
+      <RootComponent type="1" schemaName="phonecall" behavior="1" />
+      <RootComponent type="1" schemaName="product" behavior="1" />
+      <RootComponent type="1" schemaName="systemuser" behavior="1" />
+      <RootComponent type="1" schemaName="task" behavior="1" />
+      <RootComponent type="29" id="{3e8ebee6-a2bc-4451-9c5f-b146b085413a}" behavior="0" />
+      <RootComponent type="29" id="{919e14d1-6489-4852-abd0-a63a6ecaac5d}" behavior="0" />
+      <RootComponent type="60" id="{dc98a189-389c-ed11-aad1-000d3adf77ac}" behavior="0" />
+      <RootComponent type="61" schemaName="BIS_/Bis.Common.CRM.WebResources.js" behavior="0" />
+      <RootComponent type="61" schemaName="bis_address.svg" behavior="0" />
+      <RootComponent type="61" schemaName="bis_addressbook.svg" behavior="0" />
+      <RootComponent type="61" schemaName="bis_agreement.svg" behavior="0" />
+      <RootComponent type="61" schemaName="bis_area.svg" behavior="0" />
+      <RootComponent type="61" schemaName="bis_bislogo.svg" behavior="0" />
+      <RootComponent type="61" schemaName="bis_boardmemberhistory.svg" behavior="0" />
+      <RootComponent type="61" schemaName="bis_city.svg" behavior="0" />
+      <RootComponent type="61" schemaName="bis_code.svg" behavior="0" />
+      <RootComponent type="61" schemaName="bis_contingencyarrangement.svg" behavior="0" />
+      <RootComponent type="61" schemaName="bis_country.svg" behavior="0" />
+      <RootComponent type="61" schemaName="bis_institutiongroup.svg" behavior="0" />
+      <RootComponent type="61" schemaName="bis_product.svg" behavior="0" />
+      <RootComponent type="61" schemaName="bis_report.svg" behavior="0" />
+      <RootComponent type="61" schemaName="bis_reportcategory.svg" behavior="0" />
+      <RootComponent type="61" schemaName="bis_reportschedule.svg" behavior="0" />
+      <RootComponent type="61" schemaName="bis_shareholderhistory.svg" behavior="0" />
+      <RootComponent type="61" schemaName="bis_state.svg" behavior="0" />
+      <RootComponent type="61" schemaName="bis_systemsetting.svg" behavior="0" />
+      <RootComponent type="61" schemaName="bis_validation.svg" behavior="0" />
+      <RootComponent type="61" schemaName="bis_zipcode.svg" behavior="0" />
+      <RootComponent type="62" schemaName="bis_biscrm" behavior="0" />
+      <RootComponent type="80" schemaName="bis_biscrm" behavior="0" />
+      <RootComponent type="9" schemaName="bis_addresstype" behavior="0" />
+      <RootComponent type="9" schemaName="bis_bissystemaccessapplicationnames" behavior="0" />
+      <RootComponent type="9" schemaName="bis_bissystemaccesskeysent" behavior="0" />
+      <RootComponent type="9" schemaName="bis_contactcpmifieldofexpertise" behavior="0" />
+      <RootComponent type="9" schemaName="bis_contacttype" behavior="0" />
+      <RootComponent type="9" schemaName="bis_contingencyarrangementdocumenttype" behavior="0" />
+      <RootComponent type="9" schemaName="bis_creationsource" behavior="0" />
+      <RootComponent type="9" schemaName="bis_institutioncodes" behavior="0" />
+      <RootComponent type="9" schemaName="bis_institutionpartyfunction" behavior="0" />
+      <RootComponent type="9" schemaName="bis_institutionwatchlist" behavior="0" />
+      <RootComponent type="9" schemaName="bis_isrstatus" behavior="0" />
+      <RootComponent type="9" schemaName="bis_languagespoken" behavior="0" />
+      <RootComponent type="9" schemaName="bis_prefix" behavior="0" />
+      <RootComponent type="9" schemaName="bis_reportschedulingcategory" behavior="0" />
+      <RootComponent type="9" schemaName="bis_salutation" behavior="0" />
+      <RootComponent type="9" schemaName="bis_shareholderofbis" behavior="0" />
+      <RootComponent type="9" schemaName="bis_validationrelatedentity" behavior="0" />
+      <RootComponent type="9" schemaName="bis_validationrelatedevent" behavior="0" />
+      <RootComponent type="91" id="{833ca883-9fc6-4298-8813-d02bea273eab}" schemaName="Bis.Common.CRM.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=52cedd3c6811393e" behavior="0" />
+    </RootComponents>
+    <MissingDependencies>
+      <MissingDependency>
+        <Required type="1" schemaName="leadtoopportunitysalesprocess" displayName="Lead To Opportunity Sales Process" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.23014.10001)</package>
+        </Required>
+        <Dependent type="1" schemaName="leadtoopportunitysalesprocess" displayName="Lead To Opportunity Sales Process" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunity" displayName="Non-BIS Instrument" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.23014.10001)</package>
+        </Required>
+        <Dependent type="1" schemaName="opportunity" displayName="Non-BIS Instrument" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="opportunitysalesprocess" displayName="Opportunity Sales Process" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.23014.10001)</package>
+        </Required>
+        <Dependent type="1" schemaName="opportunitysalesprocess" displayName="Opportunity Sales Process" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="product" displayName="Product" solution="msdynce_ProductManagement (9.0.4.0066)">
+          <package>msdynce_ProductManagementAnchor (9.0.23014.10002)</package>
+        </Required>
+        <Dependent type="1" schemaName="product" displayName="Product" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="createdby" displayName="Created By" parentSchemaName="opportunity" parentDisplayName="Non-BIS Instrument" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.23014.10001)</package>
+        </Required>
+        <Dependent type="60" displayName="Non - BIS Instruments" parentDisplayName="Non-BIS Instrument" id="{1c45e737-60e5-462b-99fc-36fcef83e64d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="createdon" displayName="Created On" parentSchemaName="opportunity" parentDisplayName="Non-BIS Instrument" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.23014.10001)</package>
+        </Required>
+        <Dependent type="26" schemaName="Inactive Non-BIS Intruments" displayName="Inactive Non-BIS Intruments" parentSchemaName="opportunity" parentDisplayName="Non-BIS Instrument" id="{9045ec36-b2a3-ed11-aad0-000d3a830dec}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="createdon" displayName="Created On" parentSchemaName="opportunity" parentDisplayName="Non-BIS Instrument" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.23014.10001)</package>
+        </Required>
+        <Dependent type="26" schemaName="Active Non-BIS Intruments" displayName="Active Non-BIS Intruments" parentSchemaName="opportunity" parentDisplayName="Non-BIS Instrument" id="{c9c49229-b2a3-ed11-aad0-000d3a830dec}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="createdon" displayName="Created On" parentSchemaName="opportunity" parentDisplayName="Non-BIS Instrument" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.23014.10001)</package>
+        </Required>
+        <Dependent type="60" displayName="Non - BIS Instruments" parentDisplayName="Non-BIS Instrument" id="{1c45e737-60e5-462b-99fc-36fcef83e64d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="estimatedvalue" displayName="Est. Revenue" parentSchemaName="opportunity" parentDisplayName="Non-BIS Instrument" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.23014.10001)</package>
+        </Required>
+        <Dependent type="60" displayName="Non - BIS Instruments" parentDisplayName="Non-BIS Instrument" id="{1c45e737-60e5-462b-99fc-36fcef83e64d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="isrevenuesystemcalculated" displayName="Revenue" parentSchemaName="opportunity" parentDisplayName="Non-BIS Instrument" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.23014.10001)</package>
+        </Required>
+        <Dependent type="60" displayName="Non - BIS Instruments" parentDisplayName="Non-BIS Instrument" id="{1c45e737-60e5-462b-99fc-36fcef83e64d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="modifiedby" displayName="Modified By" parentSchemaName="opportunity" parentDisplayName="Non-BIS Instrument" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.23014.10001)</package>
+        </Required>
+        <Dependent type="60" displayName="Non - BIS Instruments" parentDisplayName="Non-BIS Instrument" id="{1c45e737-60e5-462b-99fc-36fcef83e64d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="modifiedon" displayName="Modified On" parentSchemaName="opportunity" parentDisplayName="Non-BIS Instrument" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.23014.10001)</package>
+        </Required>
+        <Dependent type="60" displayName="Non - BIS Instruments" parentDisplayName="Non-BIS Instrument" id="{1c45e737-60e5-462b-99fc-36fcef83e64d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="name" displayName="Topic" parentSchemaName="opportunity" parentDisplayName="Non-BIS Instrument" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.23014.10001)</package>
+        </Required>
+        <Dependent type="2" schemaName="name" displayName="Topic" parentSchemaName="opportunity" parentDisplayName="Non-BIS Instrument" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="opportunityid" displayName="Opportunity" parentSchemaName="opportunity" parentDisplayName="Non-BIS Instrument" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.23014.10001)</package>
+        </Required>
+        <Dependent type="26" schemaName="Inactive Non-BIS Intruments" displayName="Inactive Non-BIS Intruments" parentSchemaName="opportunity" parentDisplayName="Non-BIS Instrument" id="{9045ec36-b2a3-ed11-aad0-000d3a830dec}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="opportunityid" displayName="Opportunity" parentSchemaName="opportunity" parentDisplayName="Non-BIS Instrument" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.23014.10001)</package>
+        </Required>
+        <Dependent type="26" schemaName="Active Non-BIS Intruments" displayName="Active Non-BIS Intruments" parentSchemaName="opportunity" parentDisplayName="Non-BIS Instrument" id="{c9c49229-b2a3-ed11-aad0-000d3a830dec}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="ownerid" displayName="Owner" parentSchemaName="opportunity" parentDisplayName="Non-BIS Instrument" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.23014.10001)</package>
+        </Required>
+        <Dependent type="60" displayName="Non - BIS Instruments" parentDisplayName="Non-BIS Instrument" id="{1c45e737-60e5-462b-99fc-36fcef83e64d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="parentaccountid" displayName="Account" parentSchemaName="opportunity" parentDisplayName="Non-BIS Instrument" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.23014.10001)</package>
+        </Required>
+        <Dependent type="60" displayName="Non - BIS Instruments" parentDisplayName="Non-BIS Instrument" id="{1c45e737-60e5-462b-99fc-36fcef83e64d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="pricelevelid" displayName="Price List" parentSchemaName="opportunity" parentDisplayName="Non-BIS Instrument" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.23014.10001)</package>
+        </Required>
+        <Dependent type="60" displayName="Non - BIS Instruments" parentDisplayName="Non-BIS Instrument" id="{1c45e737-60e5-462b-99fc-36fcef83e64d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="statecode" displayName="Status" parentSchemaName="opportunity" parentDisplayName="Non-BIS Instrument" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.23014.10001)</package>
+        </Required>
+        <Dependent type="26" schemaName="Inactive Non-BIS Intruments" displayName="Inactive Non-BIS Intruments" parentSchemaName="opportunity" parentDisplayName="Non-BIS Instrument" id="{9045ec36-b2a3-ed11-aad0-000d3a830dec}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="statecode" displayName="Status" parentSchemaName="opportunity" parentDisplayName="Non-BIS Instrument" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.23014.10001)</package>
+        </Required>
+        <Dependent type="26" schemaName="Active Non-BIS Intruments" displayName="Active Non-BIS Intruments" parentSchemaName="opportunity" parentDisplayName="Non-BIS Instrument" id="{c9c49229-b2a3-ed11-aad0-000d3a830dec}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="statecode" displayName="Status" parentSchemaName="opportunity" parentDisplayName="Non-BIS Instrument" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.23014.10001)</package>
+        </Required>
+        <Dependent type="60" displayName="Non - BIS Instruments" parentDisplayName="Non-BIS Instrument" id="{1c45e737-60e5-462b-99fc-36fcef83e64d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="statuscode" displayName="Status Reason" parentSchemaName="opportunity" parentDisplayName="Non-BIS Instrument" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.23014.10001)</package>
+        </Required>
+        <Dependent type="60" displayName="Non - BIS Instruments" parentDisplayName="Non-BIS Instrument" id="{1c45e737-60e5-462b-99fc-36fcef83e64d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="totalamount" displayName="Total Amount" parentSchemaName="opportunity" parentDisplayName="Non-BIS Instrument" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.23014.10001)</package>
+        </Required>
+        <Dependent type="60" displayName="Non - BIS Instruments" parentDisplayName="Non-BIS Instrument" id="{1c45e737-60e5-462b-99fc-36fcef83e64d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="2" schemaName="transactioncurrencyid" displayName="Currency" parentSchemaName="opportunity" parentDisplayName="Non-BIS Instrument" solution="msdynce_Sales (9.0.4.0076)">
+          <package>msdynce_SalesAnchor (9.0.23014.10001)</package>
+        </Required>
+        <Dependent type="2" schemaName="transactioncurrencyid" displayName="Currency" parentSchemaName="opportunity" parentDisplayName="Non-BIS Instrument" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Account names list" displayName="Account names list" parentSchemaName="account" parentDisplayName="Institution" solution="MicrosoftDynamics_Marketing (1.90.2011.0)" id="{199a7fea-93b3-47c8-b950-4b6d60b2c955}">
+          <package>MicrosoftDynamics_MktCompleteAnchorSolution (1.90.2011.0)</package>
+        </Required>
+        <Dependent type="80" schemaName="bis_biscrm" displayName="BIS CRM" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="All Institutions" displayName="All Institutions" parentSchemaName="account" parentDisplayName="Institution" solution="msdynce_AppCommon (9.0.4.0066)" id="{65ffaf9a-e8c5-432d-860b-32f841b00d87}">
+          <package>msdynce_AppCommonAnchor (9.0.23014.10002)</package>
+        </Required>
+        <Dependent type="26" schemaName="All Institutions" displayName="All Institutions" parentSchemaName="account" parentDisplayName="Institution" id="{65ffaf9a-e8c5-432d-860b-32f841b00d87}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Opportunity Advanced Find View" displayName="Opportunity Advanced Find View" parentSchemaName="opportunity" parentDisplayName="Non-BIS Instrument" solution="msdynce_Sales (9.0.4.0076)" id="{00000000-0000-0000-00aa-000000666800}">
+          <package>msdynce_SalesAnchor (9.0.23014.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="bis_biscrm" displayName="BIS CRM" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Opportunity Associated View" displayName="Opportunity Associated View" parentSchemaName="opportunity" parentDisplayName="Non-BIS Instrument" solution="msdynce_Sales (9.0.4.0076)" id="{00000000-0000-0000-00aa-000010001203}">
+          <package>msdynce_SalesAnchor (9.0.23014.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="bis_biscrm" displayName="BIS CRM" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="26" schemaName="Opportunity Lookup View" displayName="Opportunity Lookup View" parentSchemaName="opportunity" parentDisplayName="Non-BIS Instrument" solution="msdynce_Sales (9.0.4.0076)" id="{9eb361b4-67ac-4830-8abf-2d29efbaee2c}">
+          <package>msdynce_SalesAnchor (9.0.23014.10001)</package>
+        </Required>
+        <Dependent type="80" schemaName="bis_biscrm" displayName="BIS CRM" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="29" displayName="Opportunity Sales Process" solution="msdynce_Sales (9.0.4.0076)" id="{3e8ebee6-a2bc-4451-9c5f-b146b085413a}">
+          <package>msdynce_SalesAnchor (9.0.23014.10001)</package>
+        </Required>
+        <Dependent type="29" displayName="Opportunity Sales Process" id="{3e8ebee6-a2bc-4451-9c5f-b146b085413a}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="29" displayName="Lead to Opportunity Sales Process" solution="msdynce_Sales (9.0.4.0076)" id="{919e14d1-6489-4852-abd0-a63a6ecaac5d}">
+          <package>msdynce_SalesAnchor (9.0.23014.10001)</package>
+        </Required>
+        <Dependent type="29" displayName="Lead to Opportunity Sales Process" id="{919e14d1-6489-4852-abd0-a63a6ecaac5d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Account Reference Panel" parentDisplayName="Institution" solution="msdynce_AppCommon (9.0.4.0066)" id="{098ae145-1567-41ec-8398-86dbaac70c9b}">
+          <package>msdynce_AppCommonAnchor (9.0.23014.10002)</package>
+        </Required>
+        <Dependent type="80" schemaName="bis_biscrm" displayName="BIS CRM" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Social Profiles" parentDisplayName="Institution" solution="msdynce_AppCommon (9.0.4.0066)" id="{2205c86d-ed88-4a2f-a447-3b86a8781f2e}">
+          <package>msdynce_AppCommonAnchor (9.0.23014.10002)</package>
+        </Required>
+        <Dependent type="80" schemaName="bis_biscrm" displayName="BIS CRM" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="account contact card" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{29de27bc-a257-4f29-99cf-bab4a84e688f}">
+          <package>msdynce_AppCommonAnchor (9.0.23014.10002)</package>
+        </Required>
+        <Dependent type="60" displayName="BIS Institution" parentDisplayName="Institution" id="{8044b2ef-e75d-4b94-b138-21220b82c4ad}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="account contact card" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{29de27bc-a257-4f29-99cf-bab4a84e688f}">
+          <package>msdynce_AppCommonAnchor (9.0.23014.10002)</package>
+        </Required>
+        <Dependent type="80" schemaName="bis_biscrm" displayName="BIS CRM" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Live Persona Card Form" parentDisplayName="Contact" solution="msdynce_AppCommonPatch201904 (9.0.23014.10002)" id="{449faa0e-f471-48ec-87d0-4719909546d2}">
+          <package>msdynce_AppCommonAnchor (9.0.23014.10002)</package>
+        </Required>
+        <Dependent type="80" schemaName="bis_biscrm" displayName="BIS CRM" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Contact Quick Create" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{661157fe-2fc9-4eaa-835f-5bfa2f7b64f7}">
+          <package>msdynce_AppCommonAnchor (9.0.23014.10002)</package>
+        </Required>
+        <Dependent type="80" schemaName="bis_biscrm" displayName="BIS CRM" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Account Hierarchy Tile Form" parentDisplayName="Institution" solution="msdynce_AppCommon (9.0.4.0066)" id="{69cff312-cfb6-4289-9631-249ab85d2c62}">
+          <package>msdynce_AppCommonAnchor (9.0.23014.10002)</package>
+        </Required>
+        <Dependent type="80" schemaName="bis_biscrm" displayName="BIS CRM" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="contact card" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{707fc57b-c5e6-471b-a180-e37ed28a38e2}">
+          <package>msdynce_AppCommonAnchor (9.0.23014.10002)</package>
+        </Required>
+        <Dependent type="80" schemaName="bis_biscrm" displayName="BIS CRM" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Social Profiles" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{7bb87dfd-ec3e-4ed9-8e3e-5725d3067295}">
+          <package>msdynce_AppCommonAnchor (9.0.23014.10002)</package>
+        </Required>
+        <Dependent type="80" schemaName="bis_biscrm" displayName="BIS CRM" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="account card" parentDisplayName="Institution" solution="msdynce_AppCommon (9.0.4.0066)" id="{b028db32-3619-48a5-ac51-cf3f947b0ef3}">
+          <package>msdynce_AppCommonAnchor (9.0.23014.10002)</package>
+        </Required>
+        <Dependent type="80" schemaName="bis_biscrm" displayName="BIS CRM" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Contact Quick Form" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{bdb0ae1c-32fa-4374-b637-8dafe107bc44}">
+          <package>msdynce_AppCommonAnchor (9.0.23014.10002)</package>
+        </Required>
+        <Dependent type="80" schemaName="bis_biscrm" displayName="BIS CRM" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Account Quick Create" parentDisplayName="Institution" solution="msdynce_AppCommon (9.0.4.0066)" id="{c9e7ec2d-efca-4e4c-b3e3-f63c4bba5e4b}">
+          <package>msdynce_AppCommonAnchor (9.0.23014.10002)</package>
+        </Required>
+        <Dependent type="80" schemaName="bis_biscrm" displayName="BIS CRM" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Contact Reference Panel" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{d880c3cf-80e2-42f3-82f9-24d040d09f17}">
+          <package>msdynce_AppCommonAnchor (9.0.23014.10002)</package>
+        </Required>
+        <Dependent type="80" schemaName="bis_biscrm" displayName="BIS CRM" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="60" displayName="Recent Cases and Entitlements" parentDisplayName="Contact" solution="msdynce_AppCommon (9.0.4.0066)" id="{f3b707fb-3b5f-45f9-9c6b-5e573bb5d19e}">
+          <package>msdynce_AppCommonAnchor (9.0.23014.10002)</package>
+        </Required>
+        <Dependent type="80" schemaName="bis_biscrm" displayName="BIS CRM" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="AppCommon/Account/Account_main_system_library.js" displayName="AppCommon/Account/Account_main_system_library.js" solution="msdynce_AppCommon (9.0.4.0066)">
+          <package>msdynce_AppCommonAnchor (9.0.23014.10002)</package>
+        </Required>
+        <Dependent type="60" displayName="Banking Form" parentDisplayName="Institution" id="{85ac9825-2e67-4d06-9356-cdfcdef18465}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
+        <Dependent type="80" schemaName="bis_biscrm" displayName="BIS CRM" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="MscrmControls.FieldControls.ToggleControl" displayName="MscrmControls.FieldControls.ToggleControl" solution="BaseCustomControlsCore (9.0.2301.4010)" />
+        <Dependent type="60" displayName="Non - BIS Instruments" parentDisplayName="Non-BIS Instrument" id="{1c45e737-60e5-462b-99fc-36fcef83e64d}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="MscrmControls.FieldControls.ToggleControl" displayName="MscrmControls.FieldControls.ToggleControl" solution="BaseCustomControlsCore (9.0.2301.4010)" />
+        <Dependent type="60" displayName="Quick Create Non-BIS Instrument Form" parentDisplayName="Non-BIS Instrument" id="{36721e46-39f7-4c5e-81f0-eba48bb31ca7}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="MscrmControls.FieldControls.ToggleControl" displayName="MscrmControls.FieldControls.ToggleControl" solution="BaseCustomControlsCore (9.0.2301.4010)" />
+        <Dependent type="60" displayName="BIS Contact" parentDisplayName="Contact" id="{3f6d94ac-68ad-40f4-b00f-735551539827}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="MscrmControls.FieldControls.ToggleControl" displayName="MscrmControls.FieldControls.ToggleControl" solution="BaseCustomControlsCore (9.0.2301.4010)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Connection" id="{4221e030-73d1-433f-ab80-063519d7a8bd}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="MscrmControls.FieldControls.ToggleControl" displayName="MscrmControls.FieldControls.ToggleControl" solution="BaseCustomControlsCore (9.0.2301.4010)" />
+        <Dependent type="60" displayName="BIS Institution" parentDisplayName="Institution" id="{8044b2ef-e75d-4b94-b138-21220b82c4ad}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="MscrmControls.FieldControls.ToggleControl" displayName="MscrmControls.FieldControls.ToggleControl" solution="BaseCustomControlsCore (9.0.2301.4010)" />
+        <Dependent type="60" displayName="Banking Form" parentDisplayName="Institution" id="{85ac9825-2e67-4d06-9356-cdfcdef18465}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="MscrmControls.FieldControls.ToggleControl" displayName="MscrmControls.FieldControls.ToggleControl" solution="BaseCustomControlsCore (9.0.2301.4010)" />
+        <Dependent type="60" displayName="Quick Create Form" parentDisplayName="Address Book" id="{91c8b672-c226-4d46-8d17-d0559cc38a94}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="MscrmControls.FieldControls.ToggleControl" displayName="MscrmControls.FieldControls.ToggleControl" solution="BaseCustomControlsCore (9.0.2301.4010)" />
+        <Dependent type="60" displayName="Information" parentDisplayName="Code" id="{c85e5d61-4f90-45a1-b435-d8c18aeb7bfc}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="MscrmControls.Grid.GridControl" displayName="MscrmControls.Grid.GridControl" solution="BaseCustomControlsCore (9.0.2301.4010)" />
+        <Dependent type="60" displayName="Banking Form" parentDisplayName="Institution" id="{85ac9825-2e67-4d06-9356-cdfcdef18465}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="MscrmControls.Grid.GridControl" displayName="MscrmControls.Grid.GridControl" solution="BaseCustomControlsCore (9.0.2301.4010)" />
+        <Dependent type="68" id="{79fdf13e-e221-4ca5-96f4-ac04737f63c1}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="MscrmControls.Grid.GridControl" displayName="MscrmControls.Grid.GridControl" solution="BaseCustomControlsCore (9.0.2301.4010)" />
+        <Dependent type="68" id="{b74691dd-8d3d-4a27-8787-71aadca38451}" />
+      </MissingDependency>
+    </MissingDependencies>
+  </SolutionManifest>
+</ImportExportXml>

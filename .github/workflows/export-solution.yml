@@ -1,0 +1,149 @@
+name: export-solution
+# Export solution from DEV environment
+#  unpack it and prepare, commit and push a git branch with the changes
+
+on:
+  workflow_dispatch:
+     inputs:
+      # Change this value
+      solution_name:
+        description: 'name of the solution to worked on from Power Platform'
+        required: true
+        default: biscrm
+       #Do Not change these values
+      solution_exported_folder:
+        description: 'folder name for staging the exported solution *do not change*'
+        required: true
+        default: /out
+      solution_folder:
+        description: 'staging the unpacked solution folder before check-in *do not change*'
+        required: true
+        default: /solutions
+      solution_target_folder: 
+       description: 'folder name to be created and checked in *do not change*'
+       required: true
+       default: solutions
+env:
+#edit your values here
+  ENVIRONMENT_URL: 'https://bis-d365-dev.crm17.dynamics.com/'
+  CLIENT_ID: 'be73aa7b-0105-4f77-8446-7b1e69c9d45d'
+  TENANT_ID: '03e82858-fc14-4f12-b078-aac6d25c87da'
+
+jobs:
+  runner:
+    uses: bis-its-devops/runner-creator-workflow/.github/workflows/create-runner.yaml@v1
+    with:
+      image: quay.bisinfo.org/devops/nodejs-16-runner
+      jobName: export-from-dev
+      
+  # Job for the export of the considered solution from the dev environment associated to the issue
+  export-from-dev:
+    name: export-from-dev
+    needs: runner
+    runs-on: ${{ needs.runner.outputs.runnername }}
+    # or you can say runs-on: ubuntu-latest
+    env:
+      RUNNER_DEBUG: 1
+
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        lfs: true
+        
+    # Who am I action
+    # Microsoft action: https://github.com/microsoft/powerplatform-actions/blob/main/... 
+    - name: who-am-i action
+      uses: microsoft/powerplatform-actions/who-am-i@v0
+      with:
+        environment-url: ${{env.ENVIRONMENT_URL}}
+        app-id: ${{env.CLIENT_ID}}
+        client-secret: ${{ secrets.PowerPlatformSPN }}
+        tenant-id: ${{env.TENANT_ID}}
+        
+     #  Publish all customizations on the Dataverse Dev environment
+     #  Microsoft action: https://github.com/microsoft/powerplatform-actions/blob/main/publish-solution/action.yml
+    - name: Publish solutions
+      uses: microsoft/powerplatform-actions/publish-solution@main
+      with:
+        environment-url: ${{env.ENVIRONMENT_URL}}
+        app-id: ${{env.CLIENT_ID}}
+        client-secret: ${{ secrets.PowerPlatformSPN }}
+        tenant-id: ${{env.TENANT_ID}}
+        
+    # Export the considered solution as unmanaged from the Dataverse Dev environment
+    #   Microsoft action: https://github.com/microsoft/powerplatform-actions/blob/main/export-solution/action.yml
+    - name: Export solution as unmanaged
+      uses: microsoft/powerplatform-actions/export-solution@v0
+      with:
+        environment-url: ${{env.ENVIRONMENT_URL}}
+        app-id: ${{env.CLIENT_ID}}
+        client-secret: ${{ secrets.PowerPlatformSPN }}
+        tenant-id: ${{env.TENANT_ID}}
+        solution-name: ${{ github.event.inputs.solution_name }}
+        solution-output-file: ${{ github.event.inputs.solution_exported_folder}}/${{ github.event.inputs.solution_name }}.zip
+
+    # Unpack the unmanaged solution exported in the previous step
+    #   Microsoft action: https://github.com/microsoft/powerplatform-actions/blob/main/unpack-solution/action.yml
+    - name: Unpack unmanaged solution
+      uses: microsoft/powerplatform-actions/unpack-solution@v0
+      with:
+        solution-file: ${{ github.event.inputs.solution_exported_folder}}/${{ github.event.inputs.solution_name }}.zip
+        solution-folder: ${{ github.event.inputs.solution_folder}}/${{ github.event.inputs.solution_name }}
+        solution-type: 'Unmanaged'
+        overwrite-files: true
+        
+   
+   
+   # Commt changes ito repository
+        
+    - name: Commit changes
+      run: |
+        cp -r ${{ github.event.inputs.solution_folder}}/${{ github.event.inputs.solution_name }} ./${{ github.event.inputs.solution_folder}}/${{ github.event.inputs.solution_name }}
+        git config --global user.email "no-reply@github.com"
+        git config --global user.name "GitHub Actions"
+        git checkout dev
+        git add --all 
+        git commit -m "Updates from the dev environment"
+        git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+        git push
+        
+  build:
+    name: build
+    needs: [runner, export-from-dev]
+    runs-on: ${{ needs.runner.outputs.runnername }}
+      # or you can say runs-on: ubuntu-latest
+    env:
+      RUNNER_DEBUG: 1
+    steps:
+        
+            - name: Checkout code
+              uses: actions/checkout@v3
+              
+            - name: Install dependencies
+              working-directory: ./Src/Bis.Common.CRM/Bis.Common.CRM.WebResources         
+              run: npm ci
+              
+            - name: Build project
+              working-directory: ./Src/Bis.Common.CRM/Bis.Common.CRM.WebResources             
+              run: |
+                npm run publish --if-present
+                pwd
+              
+            - name: Test project
+              working-directory: ./Src/Bis.Common.CRM/Bis.Common.CRM.WebResources  
+              run: npm test
+            
+            - name: Publish build artifacts
+              uses: actions/upload-artifact@v3
+              with:
+                name: Bis.Common.CRM.WebResources.js
+                path: ./Src/Bis.Common.CRM/Bis.Common.CRM.WebResources/dist 
+  
+
+  cleanup:
+    if: ${{ cancelled() || failure() }}
+    needs: [build, export-from-dev,  runner]
+    uses: bis-its-devops/runner-creator-workflow/.github/workflows/cleanup-runner.yaml@v1
+    with:
+      runnerName: ${{ needs.runner.outputs.runnername }}
+

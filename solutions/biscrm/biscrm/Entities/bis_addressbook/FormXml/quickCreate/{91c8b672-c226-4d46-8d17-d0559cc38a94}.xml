@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{91c8b672-c226-4d46-8d17-d0559cc38a94}</formid>
+    <IntroducedVersion>1.1.0.2</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form maxWidth="1920">
+      <tabs>
+        <tab id="{29ece6c7-490f-4478-bf7a-438a5e053bde}" name="tab_create" showlabel="false" locklevel="0" expanded="true">
+          <labels>
+            <label description="Create" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="33%">
+              <sections>
+                <section id="{c8d7775d-4fd4-49bf-8917-ad644d2a0a8c}" name="section_searchforaddress" columns="1" showlabel="true" showbar="false" IsUserDefined="0" locklevel="0" labelwidth="130" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Seach for Address" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{178742c1-689a-bc51-1e29-1c7445e80316}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Type" languagecode="1033" />
+                        </labels>
+                        <control id="bis_type" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bis_type" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d4447751-734b-7152-b72e-9d05b686499c}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Address" languagecode="1033" />
+                        </labels>
+                        <control id="bis_address" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="bis_address" disabled="false" uniqueid="{801aaca1-d098-7435-ae4e-b28c356478c7}">
+                          <parameters>
+                            <AutoResolve>false</AutoResolve>
+                            <DisableMru>true</DisableMru>
+                            <DisableQuickFind>true</DisableQuickFind>
+                            <DisableViewPicker>true</DisableViewPicker>
+                            <DefaultViewId>{67BE67B8-9145-4DF9-BD88-2F73ED9314E6}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5d286e09-c251-9e90-d9db-8ca5174be0a7}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Create New" languagecode="1033" />
+                        </labels>
+                        <control id="bis_createnew" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="bis_createnew" disabled="false" uniqueid="{32890db1-290a-44e0-943d-ec0a430b30c2}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c5505241-0992-e469-2e74-1d108016c9ec}" showlabel="true" locklevel="0" visible="false">
+                        <labels>
+                          <label description="International Print Address" languagecode="1033" />
+                        </labels>
+                        <control id="bis_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bis_name" disabled="true" uniqueid="{d3769542-0e21-9699-5c0a-5a885288b669}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="{1ed17891-b05b-4804-b51d-5193befcd00d}" name="section_addnewaddress" columns="1" showlabel="true" showbar="false" IsUserDefined="0" locklevel="0" labelwidth="130" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="Add New Address" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{99aa2e91-d2ab-003a-b4b9-ba52a676a6d8}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Country" languagecode="1033" />
+                        </labels>
+                        <control id="bis_country" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="bis_country" disabled="false" uniqueid="{5976717e-0389-c76a-eb72-19844889589b}">
+                          <parameters>
+                            <AutoResolve>false</AutoResolve>
+                            <DisableMru>true</DisableMru>
+                            <DisableQuickFind>true</DisableQuickFind>
+                            <DisableViewPicker>true</DisableViewPicker>
+                            <DefaultViewId>{D14BD2DC-4082-49CC-92B7-9528597C8AFA}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7e49c1b3-8941-0c39-7bb7-96521119519a}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="State" languagecode="1033" />
+                        </labels>
+                        <control id="bis_state" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="bis_state" disabled="false" uniqueid="{2edb993a-e2bd-0e39-9d67-b90a6a058a35}">
+                          <parameters>
+                            <AutoResolve>false</AutoResolve>
+                            <DisableMru>true</DisableMru>
+                            <DisableQuickFind>true</DisableQuickFind>
+                            <DisableViewPicker>true</DisableViewPicker>
+                            <DefaultViewId>{14F92D86-A21E-4DB1-8F80-C193345DF9F7}</DefaultViewId>
+                            <FilterRelationshipName>bis_bis_country_bis_state_country</FilterRelationshipName>
+                            <DependentAttributeName>bis_addressbook.bis_country</DependentAttributeName>
+                            <DependentAttributeType>bis_country</DependentAttributeType>
+                            <AllowFilterOff>true</AllowFilterOff>
+                            <AvailableViewIds>{14F92D86-A21E-4DB1-8F80-C193345DF9F7}</AvailableViewIds>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4ad41dc5-1b6c-20e5-32e4-80050ec59c7e}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="City" languagecode="1033" />
+                        </labels>
+                        <control id="bis_city" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="bis_city" disabled="false" uniqueid="{79ccb5bd-28b5-b1c4-4593-bb31ecd27401}">
+                          <parameters>
+                            <AutoResolve>false</AutoResolve>
+                            <DisableMru>true</DisableMru>
+                            <DisableQuickFind>true</DisableQuickFind>
+                            <DisableViewPicker>true</DisableViewPicker>
+                            <DefaultViewId>{D9A424EC-A4EC-4154-8F43-F0CF3393F6E6}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                            <FilterRelationshipName>bis_bis_country_bis_city_country</FilterRelationshipName>
+                            <DependentAttributeName>bis_addressbook.bis_country</DependentAttributeName>
+                            <DependentAttributeType>bis_country</DependentAttributeType>
+                            <AvailableViewIds>{D9A424EC-A4EC-4154-8F43-F0CF3393F6E6}</AvailableViewIds>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0ade019a-1403-3b81-5ea9-721a239c9828}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="ZIP Code" languagecode="1033" />
+                        </labels>
+                        <control id="bis_zipcode" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bis_zipcode" disabled="false" uniqueid="{9ab2237d-071b-3c65-0393-334454eb8263}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4bca406e-5975-c46d-8732-741a7644db70}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Address Line 1" languagecode="1033" />
+                        </labels>
+                        <control id="bis_addressline1" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bis_addressline1" disabled="false" uniqueid="{908aba42-b5d5-6118-08cc-74476b112c9e}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1b053b86-cd01-7edc-6d9c-5590d24ab713}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Address Line 2" languagecode="1033" />
+                        </labels>
+                        <control id="bis_addressline2" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bis_addressline2" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="{69c43fb6-715f-4971-ac44-8154fb9cfbd2}" name="tab_1_column_3_section_1" columns="1" showlabel="false" showbar="false" IsUserDefined="0" locklevel="0" labelwidth="130" celllabelalignment="Left" celllabelposition="Left" visible="false">
+                  <labels>
+                    <label description="section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{d9d9732e-2745-3d18-3e62-d3513613e201}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Institution" languagecode="1033" />
+                        </labels>
+                        <control id="bis_institution" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="bis_institution" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <controlDescriptions>
+        <controlDescription forControl="{32890db1-290a-44e0-943d-ec0a430b30c2}">
+          <customControl id="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}">
+            <parameters>
+              <datafieldname>bis_createnew</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="MscrmControls.FieldControls.ToggleControl">
+            <parameters>
+              <value type="TwoOptions">bis_createnew</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.FieldControls.ToggleControl">
+            <parameters>
+              <value type="TwoOptions">bis_createnew</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.FieldControls.ToggleControl">
+            <parameters>
+              <value type="TwoOptions">bis_createnew</value>
+            </parameters>
+          </customControl>
+        </controlDescription>
+      </controlDescriptions>
+      <formLibraries>
+        <Library name="BIS_/Bis.Common.CRM.WebResources.js" libraryUniqueId="{37322c11-a604-82c0-c1db-c80c05255994}" />
+      </formLibraries>
+      <events>
+        <event name="onload" application="false" active="false">
+          <Handlers>
+            <Handler functionName="Bis.Common.CRM.bis_addressbookFormQC.onLoad" libraryName="BIS_/Bis.Common.CRM.WebResources.js" handlerUniqueId="{6bb8095a-0d4c-652d-d5d3-9b04b5b173e5}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+      </events>
+      <DisplayConditions Order="1">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Quick Create Form" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{75caf8ec-36f2-439b-89a1-5c3f114b1b8d}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{10f2952e-ba4b-40af-a903-4113b432625b}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="true" showbar="false" IsUserDefined="0" id="{dbceff7d-b23c-4875-be4f-e6a97a34b139}" name="{dbceff7d-b23c-4875-be4f-e6a97a34b139}" columns="1" locklevel="0" labelwidth="130" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="DOCUMENTS" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{43967626-88a5-4e4b-b994-13638635c95d}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="bis_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bis_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{59b1099e-409d-0a74-78ad-10b61ed6c5b0}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Document Link" languagecode="1033" />
+                        </labels>
+                        <control id="bis_documentlink" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bis_documentlink" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{78458255-eeac-9d00-2899-624bcd78ca39}" showlabel="true" locklevel="0" rowspan="3">
+                        <labels>
+                          <label description="Description" languagecode="1033" />
+                        </labels>
+                        <control id="bis_description" classid="{E0DECE4B-6FC8-4a8f-A065-082708572369}" datafieldname="bis_description" disabled="false" uniqueid="{4b87c300-b679-5289-c347-8714bde1ae62}" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+                <section name="{10f2952e-ba4b-40af-a903-4113b432625b}_section_2" showlabel="true" showbar="false" locklevel="0" id="{2987eeaa-2794-c7be-665e-b775bbdea62e}" IsUserDefined="0" layout="varwidth" columns="111" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="ADMINISTRATION" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{bad328e9-1481-4e42-8887-1646a675c489}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Created By" languagecode="1033" />
+                        </labels>
+                        <control id="createdby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="createdby" disabled="true" uniqueid="{6a568260-4052-8e86-b457-0348a6868c99}">
+                          <parameters>
+                            <AutoResolve>false</AutoResolve>
+                            <DisableMru>true</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{E88CA999-0B16-4AE9-B6A9-9EDC840D42D8}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                      <cell id="{e1a695ac-a033-5936-6155-e320eb664a18}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Modified By" languagecode="1033" />
+                        </labels>
+                        <control id="modifiedby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="modifiedby" disabled="true" uniqueid="{5b0d97b1-4e05-c13b-88ec-c1ac3db552b9}">
+                          <parameters>
+                            <AutoResolve>false</AutoResolve>
+                            <DisableMru>true</DisableMru>
+                            <DisableQuickFind>false</DisableQuickFind>
+                            <DisableViewPicker>false</DisableViewPicker>
+                            <DefaultViewId>{E88CA999-0B16-4AE9-B6A9-9EDC840D42D8}</DefaultViewId>
+                            <AllowFilterOff>false</AllowFilterOff>
+                          </parameters>
+                        </control>
+                      </cell>
+                      <cell id="{7abc4eea-5170-46e8-a077-18428775cdcf}" showlabel="true" locklevel="1">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" uniqueid="{e4c2143a-8b11-d975-56a1-64548dbdde14}" disabled="true">
+                          <parameters>
+                            <AutoResolve>false</AutoResolve>
+                            <DisableMru>true</DisableMru>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6e1468ec-3d05-c194-23d8-04560e22ebe0}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Created On" languagecode="1033" />
+                        </labels>
+                        <control id="createdon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="createdon" disabled="true" uniqueid="{095c5a75-e1b6-89c3-012d-d04c1d46cb9b}" />
+                      </cell>
+                      <cell id="{8acc3121-a83d-279c-2725-9926ad057126}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Modified On" languagecode="1033" />
+                        </labels>
+                        <control id="modifiedon" classid="{5B773807-9FB2-42db-97C3-7A91EFF8ADFF}" datafieldname="modifiedon" disabled="true" uniqueid="{b650a455-2a1b-13ba-1451-51eed9ab9866}" />
+                      </cell>
+                      <cell id="{68c64cab-0aad-c57b-9545-d32444e53e89}" showlabel="true" locklevel="1">
+                        <labels>
+                          <label description="Status" languagecode="1033" />
+                        </labels>
+                        <control id="statecode" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="statecode" disabled="true" uniqueid="{e3dddb47-0951-473a-39da-283805596e2a}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{3edf56fe-74f2-4462-9bf4-50840462fb5c}" columns="111">
+        <rows>
+          <row>
+            <cell id="{34f19525-f791-463b-b534-6f4aa501d281}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{6acabd6c-b26b-dde4-e699-0d95cec1a667}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Institution" languagecode="1033" />
+              </labels>
+              <control id="header_bis_institution" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="bis_institution" disabled="false" />
+            </cell>
+            <cell id="{b1aa0eb4-db19-bc32-219e-a2dab896cb36}" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Contact" languagecode="1033" />
+              </labels>
+              <control id="header_bis_contact" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="bis_contact" disabled="false" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

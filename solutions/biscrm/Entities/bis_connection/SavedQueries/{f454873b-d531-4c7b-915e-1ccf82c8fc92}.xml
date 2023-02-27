@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{f454873b-d531-4c7b-915e-1ccf82c8fc92}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="bis_name" select="1" icon="1" preview="1">
+        <row name="result" id="bis_connectionid">
+          <cell name="bis_contact" width="100" />
+          <cell name="bis_titleposition" width="100" />
+          <cell name="bis_fromdate" width="100" />
+          <cell name="bis_todate" width="100" />
+          <cell name="bis_email" width="100" />
+          <cell name="bis_institution" width="100" />
+          <cell name="bis_phonenumber" width="100" />
+          <cell name="bis_isjobprimary" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="bis_hasauthorizedsignature" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="bis_isseniorofficial" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="bis_activitycategory" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="bis_activitysubcategory" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="bis_activity" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="bis_connection">
+          <order attribute="bis_activity" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="bis_todate" />
+          <attribute name="bis_phonenumber" />
+          <attribute name="bis_isseniorofficial" />
+          <attribute name="bis_isjobprimary" />
+          <attribute name="bis_hasauthorizedsignature" />
+          <attribute name="bis_fromdate" />
+          <attribute name="bis_email" />
+          <attribute name="bis_activitysubcategory" />
+          <attribute name="bis_activitycategory" />
+          <attribute name="bis_activity" />
+          <attribute name="bis_titleposition" />
+          <attribute name="bis_institution" />
+          <attribute name="bis_contact" />
+          <attribute name="bis_connectionid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Connections" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

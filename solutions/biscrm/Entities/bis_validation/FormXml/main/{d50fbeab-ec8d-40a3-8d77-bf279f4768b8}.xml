@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{d50fbeab-ec8d-40a3-8d77-bf279f4768b8}</formid>
+    <IntroducedVersion>1.1.0.2</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form shownavigationbar="true" showImage="false" maxWidth="1920">
+      <tabs>
+        <tab verticallayout="true" id="{b9ca7f37-9078-4220-b7a3-add3d4ed136e}" IsUserDefined="1" name="tab_validation" locklevel="0" expanded="true" showlabel="true">
+          <labels>
+            <label description="Validation" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="50%">
+              <sections>
+                <section showlabel="true" showbar="false" IsUserDefined="0" id="{00a5a8b3-ddf2-43fb-85fa-333e8d131884}" name="section_institutioncreate" columns="1" locklevel="0" labelwidth="130" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="INSTITUTION CREATE" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{048d455d-b9e2-200a-a49b-9b74e63b397d}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Institution Name" languagecode="1033" />
+                        </labels>
+                        <control id="bis_institutionname" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bis_institutionname" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4b385272-77d7-4c05-215b-c2a6d6e1d66e}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Institution Type" languagecode="1033" />
+                        </labels>
+                        <control id="bis_institutiontype" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="bis_institutiontype" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="50%">
+              <sections>
+                <section name="section_duplicateitems" showlabel="true" showbar="false" locklevel="0" id="{d2c961ac-8595-7980-b59c-14ac35bbee56}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="DUPLICATE ITEMS" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{810a5661-e305-b0cd-5560-630557b94c32}" showlabel="true" colspan="1" auto="false" rowspan="7">
+                        <labels>
+                          <label description="Related Contacts" languagecode="1033" />
+                        </labels>
+                        <control id="subgrid_contact" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true" uniqueid="{437cbc2a-022c-db5b-30ee-4add967b89b6}">
+                          <parameters>
+                            <ViewId>{00000000-0000-0000-00AA-000010001004}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>bis_bis_validation_contact</RelationshipName>
+                            <TargetEntityType>contact</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{00000000-0000-0000-00AA-000010001004},{00000000-0000-0000-00AA-000010001003}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>Grid</ChartGridMode>
+                            <VisualizationId>{E365462F-1DB9-46A8-928D-BEAB1A7A2375}</VisualizationId>
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                            <RelationshipRoleOrdinal>1</RelationshipRoleOrdinal>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row>
+                      <cell id="{d5ae46e0-ad09-4236-0832-839e9e1be389}" showlabel="false" userspacer="true">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{00a16738-43d5-32ca-8deb-464181d43bc5}" showlabel="true" colspan="1" auto="false" rowspan="7">
+                        <labels>
+                          <label description="Institutions" languagecode="1033" />
+                        </labels>
+                        <control id="subgrid_institutions" classid="{E7A81278-8635-4d9e-8D4D-59480B391C5B}" indicationOfSubgrid="true">
+                          <parameters>
+                            <ViewId>{00000000-0000-0000-00AA-000010001002}</ViewId>
+                            <IsUserView>false</IsUserView>
+                            <RelationshipName>bis_bis_validation_account</RelationshipName>
+                            <TargetEntityType>account</TargetEntityType>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <ViewIds>{00000000-0000-0000-00AA-000010001002},{00000000-0000-0000-00AA-000010001001}</ViewIds>
+                            <EnableJumpBar>false</EnableJumpBar>
+                            <ChartGridMode>Grid</ChartGridMode>
+                            <VisualizationId>{74A622C0-5193-DE11-97D4-00155DA3B01E}</VisualizationId>
+                            <IsUserChart>false</IsUserChart>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <HeaderColorCode>#F3F3F3</HeaderColorCode>
+                            <RelationshipRoleOrdinal>1</RelationshipRoleOrdinal>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_hiddenfields" id="{b30441cc-4c90-a71d-c732-331d29120b4b}" IsUserDefined="0" locklevel="0" showlabel="true" expanded="true" visible="false">
+          <labels>
+            <label description="Hidden Fields" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="section_hiddenfields" showlabel="true" showbar="false" locklevel="0" id="{6be192b9-3e3b-8e95-bcd0-1b57a4a41067}" IsUserDefined="0" layout="varwidth" columns="1" labelwidth="115" celllabelalignment="Left" celllabelposition="Left">
+                  <labels>
+                    <label description="HIDDEN FIELDS" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{87ce315d-a4a6-996b-dc82-98b2198cc438}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Related Entity" languagecode="1033" />
+                        </labels>
+                        <control id="bis_relatedentity" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bis_relatedentity" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{390e4aa2-b783-e8d2-399b-8e0b67e6c790}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Related Event" languagecode="1033" />
+                        </labels>
+                        <control id="bis_relatedevent" classid="{3EF39988-22BB-4f0b-BBBE-64B5A3748AEE}" datafieldname="bis_relatedevent" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0816b04e-b948-a56e-0a9e-0a4d78c9e797}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Related Contact" languagecode="1033" />
+                        </labels>
+                        <control id="bis_relatedcontact" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="bis_relatedcontact" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{53d2569a-4a60-852b-4b06-b22dcc8424bd}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Related Institution" languagecode="1033" />
+                        </labels>
+                        <control id="bis_relatedinstitution" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="bis_relatedinstitution" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3b52c480-5952-4e95-9c73-bb37a43d3205}" showlabel="true" locklevel="0" visible="false">
+                        <labels>
+                          <label description="ID" languagecode="1033" />
+                        </labels>
+                        <control id="bis_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="bis_name" uniqueid="{2d7b1d81-61a3-4934-528b-dae0e68b40d5}" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ae721955-29b0-4ec7-b9a7-bfc8a9b6ecec}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions />
+      <formLibraries>
+        <Library name="BIS_/Bis.Common.CRM.WebResources.js" libraryUniqueId="{56de24a6-e4a3-c776-2477-acdeb9acc294}" />
+      </formLibraries>
+      <events>
+        <event name="onload" application="false" active="false">
+          <Handlers>
+            <Handler functionName="Bis.Common.CRM.bis_validationForm.onLoad" libraryName="BIS_/Bis.Common.CRM.WebResources.js" handlerUniqueId="{96c32b27-5307-eb44-4e39-9818891e6012}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+      </events>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

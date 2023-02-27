@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{36721e46-39f7-4c5e-81f0-eba48bb31ca7}</formid>
+    <IntroducedVersion>1.1.0.2</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form maxWidth="1920">
+      <tabs>
+        <tab id="{9f05873d-5fa9-419b-9e84-f2017d61077d}" name="tab_1" showlabel="false">
+          <labels>
+            <label description="Tab" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="33%">
+              <sections>
+                <section id="{0ca123ea-c411-4590-b0ef-4dbb231033c5}" name="tab_1_column_1_section_1" columns="1" showlabel="false" showbar="false" IsUserDefined="0">
+                  <labels>
+                    <label description="section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{8b6bccc4-32a0-1091-28bb-44ac568d75a5}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Product" languagecode="1033" />
+                        </labels>
+                        <control id="bis_product" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="bis_product" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{653bc50b-9b7a-52b2-0b3d-5ba39e7c6b3b}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Investing" languagecode="1033" />
+                        </labels>
+                        <control id="bis_investing" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="bis_investing" disabled="false" uniqueid="{249d58bc-1895-43e6-ab84-d25f078fb757}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7b792c1d-4413-6adb-e55b-ae3a80ecc6b4}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Considering" languagecode="1033" />
+                        </labels>
+                        <control id="bis_considering" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="bis_considering" disabled="false" uniqueid="{2be014cc-b0bc-4ceb-8765-8ad78b97625d}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="{382b3861-872d-43df-beea-33552e0c09c9}" name="tab_1_column_2_section_1" columns="1" showlabel="false" showbar="false" IsUserDefined="0">
+                  <labels>
+                    <label description="section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{48e42d06-73f8-4488-81b5-8c623b2a47d9}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="{b24f4f67-ea15-4726-a572-4621a7aaa588}" name="tab_1_column_3_section_1" columns="1" showlabel="false" showbar="false" IsUserDefined="0">
+                  <labels>
+                    <label description="section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{a0464107-1c3f-4af4-9fed-a3f196976b8a}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <DisplayConditions Order="3">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+      <controlDescriptions>
+        <controlDescription forControl="{249d58bc-1895-43e6-ab84-d25f078fb757}">
+          <customControl id="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}">
+            <parameters>
+              <datafieldname>bis_investing</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="MscrmControls.FieldControls.ToggleControl">
+            <parameters>
+              <value type="TwoOptions">bis_investing</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.FieldControls.ToggleControl">
+            <parameters>
+              <value type="TwoOptions">bis_investing</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.FieldControls.ToggleControl">
+            <parameters>
+              <value type="TwoOptions">bis_investing</value>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{2be014cc-b0bc-4ceb-8765-8ad78b97625d}">
+          <customControl id="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}">
+            <parameters>
+              <datafieldname>bis_considering</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="MscrmControls.FieldControls.ToggleControl">
+            <parameters>
+              <value type="TwoOptions">bis_considering</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="MscrmControls.FieldControls.ToggleControl">
+            <parameters>
+              <value type="TwoOptions">bis_considering</value>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="MscrmControls.FieldControls.ToggleControl">
+            <parameters>
+              <value type="TwoOptions">bis_considering</value>
+            </parameters>
+          </customControl>
+        </controlDescription>
+      </controlDescriptions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Quick Create Non-BIS Instrument Form" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

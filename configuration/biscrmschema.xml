@@ -1,0 +1,39 @@
+<entities >
+  <entity name="bis_country" displayname="Country" etc="11030" primaryidfield="bis_countryid" primarynamefield="bis_name" disableplugins="false">
+    <fields>
+      <field displayname="Area" name="bis_area" type="entityreference" lookupType="bis_area" customfield="true" />
+      <field displayname="Country" name="bis_countryid" type="guid" primaryKey="true" />
+      <field displayname="Country Code" name="bis_countrycode" type="string" customfield="true" />
+      <field displayname="Name" name="bis_name" type="string" customfield="true" />
+    </fields>
+  </entity>
+  <entity name="bis_city" displayname="City" etc="11025" primaryidfield="bis_cityid" primarynamefield="bis_name" disableplugins="false">
+    <fields>
+      <field displayname="City" name="bis_cityid" type="guid" primaryKey="true" />
+      <field displayname="City Code" name="bis_citycode" type="string" customfield="true" />
+      <field displayname="Country" name="bis_country" type="entityreference" lookupType="bis_country" customfield="true" />
+      <field displayname="Created By" name="createdby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created By (Delegate)" name="createdonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Created On" name="createdon" type="datetime" />
+      <field displayname="Import Sequence Number" name="importsequencenumber" type="number" />
+      <field displayname="Modified By" name="modifiedby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified By (Delegate)" name="modifiedonbehalfby" type="entityreference" lookupType="systemuser" />
+      <field displayname="Modified On" name="modifiedon" type="datetime" />
+      <field displayname="Name" name="bis_name" type="string" customfield="true" />
+      <field displayname="Owner" name="ownerid" type="owner" />
+      <field displayname="Owning Business Unit" name="owningbusinessunit" type="entityreference" lookupType="businessunit" />
+      <field displayname="Owning Team" name="owningteam" type="entityreference" lookupType="team" />
+      <field displayname="Owning User" name="owninguser" type="entityreference" lookupType="systemuser" />
+      <field displayname="Record Created On" name="overriddencreatedon" type="datetime" />
+      <field displayname="State" name="bis_state" type="entityreference" lookupType="bis_state" customfield="true" />
+      <field displayname="Status" name="statecode" type="state" />
+      <field displayname="Status Reason" name="statuscode" type="status" />
+      <field displayname="Time Zone Rule Version Number" name="timezoneruleversionnumber" type="number" />
+      <field displayname="UTC Conversion Time Zone Code" name="utcconversiontimezonecode" type="number" />
+      <field displayname="Version Number" name="versionnumber" type="bigint" />
+    </fields>
+    <relationships>
+      <relationship name="bis_bis_city_bis_zipcode" manyToMany="true" isreflexive="false" relatedEntityName="bis_bis_city_bis_zipcode" m2mTargetEntity="bis_zipcode" m2mTargetEntityPrimaryKey="bis_zipcodeid" />
+    </relationships>
+  </entity>
+</entities>

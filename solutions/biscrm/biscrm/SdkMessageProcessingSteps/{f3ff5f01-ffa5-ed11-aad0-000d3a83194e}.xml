@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SdkMessageProcessingStep Name="Bis.post_bis_validation_update" SdkMessageProcessingStepId="{f3ff5f01-ffa5-ed11-aad0-000d3a83194e}" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SdkMessageId>20bebb1b-ea3e-db11-86a7-000a3a5473e8</SdkMessageId>
+  <PluginTypeName>Bis.Common.CRM.Plugins.post_bis_validation_update, Bis.Common.CRM.Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=52cedd3c6811393e</PluginTypeName>
+  <PluginTypeId>02c80270-4cf0-44e0-b132-f59b55dc7597</PluginTypeId>
+  <PrimaryEntity>bis_validation</PrimaryEntity>
+  <AsyncAutoDelete>0</AsyncAutoDelete>
+  <FilteringAttributes>bis_institutionname</FilteringAttributes>
+  <InvocationSource>1</InvocationSource>
+  <Mode>0</Mode>
+  <Rank>1</Rank>
+  <EventHandlerTypeCode>4602</EventHandlerTypeCode>
+  <Stage>40</Stage>
+  <IsCustomizable>1</IsCustomizable>
+  <IsHidden>0</IsHidden>
+  <SupportedDeployment>0</SupportedDeployment>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <SdkMessageProcessingStepImages>
+    <SdkMessageProcessingStepImage Name="preImage">
+      <SdkMessageProcessingStepImageId>{84dba781-08a6-ed11-aad0-000d3a83194e}</SdkMessageProcessingStepImageId>
+      <Attributes>bis_institutionname,bis_institutiontype,bis_relatedentity,bis_relatedevent</Attributes>
+      <EntityAlias>postImage</EntityAlias>
+      <ImageType>1</ImageType>
+      <MessagePropertyName>Target</MessagePropertyName>
+      <IsCustomizable>1</IsCustomizable>
+    </SdkMessageProcessingStepImage>
+  </SdkMessageProcessingStepImages>
+</SdkMessageProcessingStep>

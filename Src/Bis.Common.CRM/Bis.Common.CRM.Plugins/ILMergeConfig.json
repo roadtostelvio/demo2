@@ -1,0 +1,14 @@
+{
+  "General": {
+    "InputAssemblies": [
+      "$(TargetDir)\\Bis.Common.CRM.ObjectModel.dll",
+      "$(TargetDir)\\Bis.Common.CRM.Generic.Dataverse.dll",
+      "$(TargetDir)\\Bis.Common.CRM.BusinessLogic.dll",
+      "$(TargetDir)\\Newtonsoft.Json.dll"
+    ],
+    "OutputFile": "$(TargetDir)ILMerge\\$(TargetFileName)"
+  },
+  "Advanced": {
+    "DebugInfo": false
+  }
+}

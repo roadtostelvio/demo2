@@ -1,0 +1,19 @@
+{
+  "entities": [
+    "account",
+    "contact",
+    "bis_city",
+    "bis_systemsettings",
+    "bis_validation",
+    "bis_address",
+    "bis_addressbook"
+  ],
+  "actions": [],
+  "functions": [],
+  "generateIndex": true,
+  "generateFormContext": true,
+  "generateEntityTypes": true,
+  "output": {
+    "outputRoot": "./src/dataverse-gen"
+  }
+}

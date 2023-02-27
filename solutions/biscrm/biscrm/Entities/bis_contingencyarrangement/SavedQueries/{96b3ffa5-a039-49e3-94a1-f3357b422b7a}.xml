@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{96b3ffa5-a039-49e3-94a1-f3357b422b7a}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="bis_name" select="1" icon="1" preview="1">
+        <row name="result" id="bis_contingencyarrangementid">
+          <cell name="bis_name" width="150" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="bis_startdate" width="100" />
+          <cell name="bis_enddate" width="100" />
+          <cell name="bis_expiredin" width="100" />
+          <cell name="statuscode" width="100" />
+          <cell name="bis_code" width="100" />
+          <cell name="bis_lastcodeupdate" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="bis_signature" width="100" />
+          <cell name="bis_lastsignatureupdate" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="bis_procedureifnoenddate" width="125" disableSorting="1" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="bis_summary" width="100" disableSorting="1" />
+          <cell name="bis_documenttype" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="bis_dmslink" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="bis_contingencyarrangement">
+          <attribute name="bis_name" />
+          <order attribute="bis_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="bis_summary" />
+          <attribute name="bis_startdate" />
+          <attribute name="bis_signature" />
+          <attribute name="bis_procedureifnoenddate" />
+          <attribute name="bis_lastsignatureupdate" />
+          <attribute name="bis_lastcodeupdate" />
+          <attribute name="bis_expiredin" />
+          <attribute name="bis_enddate" />
+          <attribute name="bis_documenttype" />
+          <attribute name="bis_dmslink" />
+          <attribute name="bis_code" />
+          <attribute name="statuscode" />
+          <attribute name="bis_contingencyarrangementid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Contingency Arrangements" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

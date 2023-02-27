@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{035b9a15-e1b4-4065-82de-77631227c532}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="bis_name" select="1" icon="1" preview="1">
+        <row name="result" id="bis_addressid">
+          <cell name="bis_addressline1" width="150" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="bis_addressline2" width="150" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="bis_city" width="150" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="bis_zipcode" width="100" />
+          <cell name="bis_country" width="150" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="bis_area" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="bis_address">
+          <order attribute="bis_addressline1" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="bis_zipcode" />
+          <attribute name="bis_country" />
+          <attribute name="bis_city" />
+          <attribute name="bis_area" />
+          <attribute name="bis_addressline2" />
+          <attribute name="bis_addressline1" />
+          <attribute name="bis_addressid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Addresses" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

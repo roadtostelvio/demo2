@@ -1,0 +1,47 @@
+name: release-solution-to-env
+# prepare for releasing to specified environment
+
+on:
+  workflow_dispatch:
+     inputs:
+      # Change this value
+      target-environment:
+        type: environment 
+
+
+  
+env:
+#edit your values here
+  ENVIRONMENT_URL: 'https://bis-d365-dev.crm17.dynamics.com/'
+  CLIENT_ID: '0b0cf5ef-a57e-44a1-9102-778a7bfc3e7e'
+  TENANT_ID: '03e82858-fc14-4f12-b078-aac6d25c87da'
+  
+jobs:
+  runner:
+    uses: bis-its-devops/runner-creator-workflow/.github/workflows/create-runner.yaml@v1
+    with:
+      image: quay.bisinfo.org/devops/nodejs-16-runner
+      jobName: convert-to-managed
+      
+  convert-to-managed:
+    name: convert-to-managed
+    needs: runner
+    runs-on:  ${{ needs.runner.output.runnername}}
+    env:
+      RUNNER_DEBUG: 1
+      
+    steps:
+    - uses: actions/cjeckout@v3
+      with: 
+        lfs: true
+        
+  cleanup:
+     if: ${{ cancelled() || failure() }}
+     needs: [ convert-to-managed,  runner]
+     uses: bis-its-devops/runner-creator-workflow/.github/workflows/cleanup-runner.yaml@v1
+     with:
+      runnerName: ${{ needs.runner.outputs.runnername }}    
+      
+  
+  
+        

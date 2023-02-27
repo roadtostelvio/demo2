@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{5b41f566-7d34-4831-8041-3f00ba5b1d6f}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="bis_name" select="1" icon="1" preview="1">
+        <row name="result" id="bis_boardmemberhistoryid">
+          <cell name="bis_name" width="200" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+          <cell name="bis_startdate" width="100" />
+          <cell name="bis_enddate" width="100" />
+          <cell name="bis_institution" width="125" imageproviderfunctionname="" imageproviderwebresource="$webresource:" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="bis_boardmemberhistory">
+          <attribute name="bis_name" />
+          <order attribute="bis_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="bis_startdate" />
+          <attribute name="bis_institution" />
+          <attribute name="bis_enddate" />
+          <attribute name="bis_boardmemberhistoryid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Board Member Histories" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

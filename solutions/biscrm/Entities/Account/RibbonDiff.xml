@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RibbonDiffXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CustomActions>
+    <CustomAction Id="bis.account.Button.CreateNew.Form.CustomAction" Location="Mscrm.Form.account.MainTab.Save.Controls._children" Sequence="0">
+      <CommandUIDefinition>
+        <Button Command="bis.account.Command.CreateNew" Id="bis.account.Button.CreateNew.Form" LabelText="$LocLabels:bis.account.Button.CreateNew.Form.LabelText" Sequence="0" TemplateAlias="o1" ModernImage="New" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="bis.account.Button.CreateNew.Home.CustomAction" Location="Mscrm.HomepageGrid.account.MainTab.Management.Controls._children" Sequence="15">
+      <CommandUIDefinition>
+        <Button Command="bis.account.Command.CreateNew" Id="bis.account.Button.CreateNew.Home" LabelText="$LocLabels:bis.account.Button.CreateNew.Home.LabelText" Sequence="15" TemplateAlias="o1" ModernImage="New" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <CustomAction Id="bis.account.Button.CreateNew.Subgrid.CustomAction" Location="Mscrm.SubGrid.account.MainTab.Management.Controls._children" Sequence="0">
+      <CommandUIDefinition>
+        <Button Command="bis.account.Command.CreateNew" Id="bis.account.Button.CreateNew.Subgrid" LabelText="$LocLabels:bis.account.Button.CreateNew.Subgrid.LabelText" Sequence="0" TemplateAlias="o1" ModernImage="New" />
+      </CommandUIDefinition>
+    </CustomAction>
+    <HideCustomAction HideActionId="bis.Mscrm.Form.account.NewRecord.Hide" Location="Mscrm.Form.account.NewRecord" />
+    <HideCustomAction HideActionId="bis.Mscrm.Form.account.NewRecordForBPFEntity.Hide" Location="Mscrm.Form.account.NewRecordForBPFEntity" />
+    <HideCustomAction HideActionId="bis.Mscrm.HomepageGrid.account.NewRecord.Hide" Location="Mscrm.HomepageGrid.account.NewRecord" />
+    <HideCustomAction HideActionId="bis.Mscrm.HomepageGrid.account.NewRecordForBPFEntity.Hide" Location="Mscrm.HomepageGrid.account.NewRecordForBPFEntity" />
+    <HideCustomAction HideActionId="bis.Mscrm.SubGrid.account.NewRecord.Hide" Location="Mscrm.SubGrid.account.NewRecord" />
+  </CustomActions>
+  <Templates>
+    <RibbonTemplates Id="Mscrm.Templates"></RibbonTemplates>
+  </Templates>
+  <CommandDefinitions>
+    <CommandDefinition Id="bis.account.Command.CreateNew">
+      <EnableRules />
+      <DisplayRules />
+      <Actions>
+        <JavaScriptFunction FunctionName="Bis.Common.CRM.AccountRibbon.createNew_bis_validation" Library="$webresource:BIS_/Bis.Common.CRM.WebResources.js" />
+      </Actions>
+    </CommandDefinition>
+  </CommandDefinitions>
+  <RuleDefinitions>
+    <TabDisplayRules />
+    <DisplayRules />
+    <EnableRules />
+  </RuleDefinitions>
+  <LocLabels>
+    <LocLabel Id="bis.account.Button.CreateNew.Form.LabelText">
+      <Titles>
+        <Title description="Create New" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="bis.account.Button.CreateNew.Home.LabelText">
+      <Titles>
+        <Title description="Create New" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="bis.account.Button.CreateNew.Subgrid.LabelText">
+      <Titles>
+        <Title description="Create New" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+  </LocLabels>
+</RibbonDiffXml>
